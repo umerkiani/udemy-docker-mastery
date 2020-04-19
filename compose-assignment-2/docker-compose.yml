@@ -1,6 +1,6 @@
 # create your drupal and postgres config here, based off the last assignment
 
-version: '3'
+version: '2'
 
 services:
     drupal:
