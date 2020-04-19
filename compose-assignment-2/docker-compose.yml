@@ -8,15 +8,15 @@ services:
         ports: 
             -"81:80"
         volumes: 
-            -v drupal-modules:/var/www/html/modules
-            -v drupal-profiles:/var/www/html/profiles
-            -v drupal-sites:/var/www/html/sites
-            -v drupal-themes:/var/www/html/themes
+            - drupal-modules:/var/www/html/modules
+            - drupal-profiles:/var/www/html/profiles
+            - drupal-sites:/var/www/html/sites
+            - drupal-themes:/var/www/html/themes
 
     postgres:
         image: postgres
         environment: 
-            -POSTGRES_PASSWORD=mypassword
+            POSTGRES_PASSWORD:mypassword
 
 volumes: 
     drupal-modules:
